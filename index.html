@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <!-- Skills Section (Custom Canvas Radar Chart) -->
+    <!-- Skills Section (Custom Canvas Radar Chart + Detailed List - Cleaned up) -->
     <section id="skills" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12 text-center">
@@ -100,7 +100,7 @@
                             <li>**Intermediate Computer Programming** (Coursework in Computer Science I & II)</li>
                             <li>**Computer Hardware Knowledge** (Maintenance, Assembly, Diagnostics)</li>
                             <li>**Storage Management** Techniques and Systems</li>
-                            <li>**Languages:** English (Native) and Spanish (Beginner)</li>
+                            <li>Languages: English (Native) and Spanish (Beginner)</li>
                         </ul>
                     </div>
                     
@@ -110,8 +110,8 @@
                             <li>**OSHA/CareerSafe Certificate of Completion** (Digital OSHA Certificate, 2021)</li>
                             <li>**Piano Recital Intermediate Award** (2014) - Intermediate Piano Student</li>
                             <li>**TaekWonDo Yellow Belt Certification** (2014)</li>
-                            <li>**Soccer Participation Award** (2010-2016)</li>
-                            <li>**Basketball Participation Award** (2011-2013)</li>
+                            <li>Soccer Participation Award (2010-2016)</li>
+                            <li>Basketball Participation Award (2011-2013)</li>
                         </ul>
                     </div>
                 </div>
@@ -119,72 +119,118 @@
         </div>
     </section>
 
-    <!-- Academic Journey Section (Detailed Coursework Timeline) -->
+    <!-- Academic Journey Section (Interactive Toggles) -->
     <section id="academics" class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Complete Academic History</h2>
-                <p class="text-slate-600">A comprehensive record of K-12 education, focusing on technical studies and core subjects.</p>
+                <p class="text-slate-600">Click on any section below to reveal the detailed course list and instructor information.</p>
             </div>
 
-            <div class="relative border-l-4 border-slate-300 ml-3 md:ml-0 md:pl-0 space-y-12">
+            <div class="space-y-4">
                 
-                <!-- Event 1: Trinity High School (12th Grade) -->
-                <div class="relative pl-10 group">
-                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
-                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
-                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2023 - May 2024</span>
-                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (12th Grade)</h3>
-                        <p class="text-sm text-slate-600 mt-2">**Key Courses:** Networking (Mrs.Brockman), Computer Maintenance (Mr.Wallloch), US History, Algebra I, English IV.</p>
+                <!-- Toggle 1: Trinity High School (12th Grade) -->
+                <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
+                    <button class="w-full p-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors" onclick="toggleDetails('trinity12')">
+                        <div class="flex flex-col">
+                            <h3 class="text-lg font-bold text-slate-800">Trinity High School - 12th Grade</h3>
+                            <span class="text-xs text-cyan-600 font-mono">August 2023 - May 2024</span>
+                        </div>
+                        <span id="trinity12-arrow" class="text-xl transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div id="trinity12-details" class="hidden p-5 bg-slate-50 border-t border-slate-200">
+                        <span class="text-sm text-slate-700 font-semibold mb-2 block">500 N Industrial Blvd. Euless, TX 76039</span>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**Networking** (Instructor: Mrs. Brockman)</li>
+                            <li>**Computer Maintenance** (Instructor: Mr. Wallloch)</li>
+                            <li>US History</li>
+                            <li>Algebra I</li>
+                            <li>English IV</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Event 2: Trinity High School (11th Grade) -->
-                <div class="relative pl-10 group">
-                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
-                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
-                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2022 - May 2023</span>
-                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (11th Grade)</h3>
-                        <p class="text-sm text-slate-600 mt-2">**Technical:** Computer Science II (Mrs.Brockman), Digital Forensics (Mr.Walloch). **Core:** Physics A & B (Mrs.Cardone & Mr.Lawrence), Algebraic Reasoning A & B (Mrs.Callahan & Mrs.Powe), English III A & B (Mrs.Smith), Weightlifting (Coach Tyron).</p>
+                <!-- Toggle 2: Trinity High School (11th Grade) -->
+                <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
+                    <button class="w-full p-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors" onclick="toggleDetails('trinity11')">
+                        <div class="flex flex-col">
+                            <h3 class="text-lg font-bold text-slate-800">Trinity High School - 11th Grade</h3>
+                            <span class="text-xs text-cyan-600 font-mono">August 2022 - May 2023</span>
+                        </div>
+                        <span id="trinity11-arrow" class="text-xl transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div id="trinity11-details" class="hidden p-5 bg-slate-50 border-t border-slate-200">
+                        <span class="text-sm text-slate-700 font-semibold mb-2 block">500 N Industrial Blvd. Euless, TX 76039</span>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**Computer Science II** (Instructor: Mrs. Brockman)</li>
+                            <li>**Digital Forensics** (Instructor: Mr. Walloch)</li>
+                            <li>Physics A & B (Instructors: Mrs. Cardone & Mr. Lawrence)</li>
+                            <li>Algebraic Reasoning A & B (Instructors: Mrs. Callahan & Mrs. Powe)</li>
+                            <li>English III A & B (Instructor: Mrs. Smith)</li>
+                            <li>Weightlifting (Instructor: Coach Tyron)</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Event 3: Trinity High School (10th Grade) -->
-                <div class="relative pl-10 group">
-                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
-                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
-                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2021 - May 2022</span>
-                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (10th Grade)</h3>
-                        <p class="text-sm text-slate-600 mt-2">**Technical:** Computer Science I (Mrs.Brockman), **Pico CTF** Competition (Mrs.Brockman). **Core:** Geometry I & II (Mrs.Otten).</p>
+                <!-- Toggle 3: Trinity High School (10th Grade) -->
+                <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
+                    <button class="w-full p-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors" onclick="toggleDetails('trinity10')">
+                        <div class="flex flex-col">
+                            <h3 class="text-lg font-bold text-slate-800">Trinity High School - 10th Grade</h3>
+                            <span class="text-xs text-cyan-600 font-mono">August 2021 - May 2022</span>
+                        </div>
+                        <span id="trinity10-arrow" class="text-xl transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div id="trinity10-details" class="hidden p-5 bg-slate-50 border-t border-slate-200">
+                        <span class="text-sm text-slate-700 font-semibold mb-2 block">500 N Industrial Blvd. Euless, TX 76039</span>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**Computer Science I** (Instructor: Mrs. Brockman)</li>
+                            <li>**Pico CTF Competition** (Instructor: Mrs. Brockman)</li>
+                            <li>Geometry I & II (Instructor: Mrs. Otten)</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Event 4: Central Junior High (Summer STEM) -->
-                <div class="relative pl-10 group">
-                    <div class="absolute w-4 h-4 rounded-full bg-blue-600 -left-2 border-4 border-slate-50"></div>
-                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
-                        <span class="text-xs font-mono text-blue-600 block mb-1">May 2017 - August 2021</span>
-                        <h3 class="text-xl font-bold text-slate-800">Central Junior High (Summer STEM Program)</h3>
-                        <p class="text-sm text-slate-600 mt-2">**Key Courses:** Principal of Engineering (Mrs.Ibanga), Biology (Mr.Simmons), Algebra 1 (Mrs.Bagett).</p>
+
+                <!-- Toggle 4: Central Junior High -->
+                <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
+                    <button class="w-full p-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors" onclick="toggleDetails('centraljh')">
+                        <div class="flex flex-col">
+                            <h3 class="text-lg font-bold text-slate-800">Central Junior High - Summer STEM Program</h3>
+                            <span class="text-xs text-blue-600 font-mono">May 2017 - August 2021</span>
+                        </div>
+                        <span id="centraljh-arrow" class="text-xl transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div id="centraljh-details" class="hidden p-5 bg-slate-50 border-t border-slate-200">
+                        <span class="text-sm text-slate-700 font-semibold mb-2 block">3191 W Pipeline Rd. Euless, TX 76040</span>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**Principal of Engineering** (Instructor: Mrs. Ibanga)</li>
+                            <li>Biology (Instructor: Mr. Simmons)</li>
+                            <li>Algebra 1 (Instructor: Mrs. Bagett)</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Event 5: Elementary Schools -->
-                <div class="relative pl-10 group">
-                    <div class="absolute w-4 h-4 rounded-full bg-slate-400 -left-2 border-4 border-slate-50"></div>
-                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
-                        <span class="text-xs font-mono text-slate-600 block mb-1">Sept 2010 - May 2017</span>
-                        <h3 class="text-xl font-bold text-slate-800">K-5 Education</h3>
-                        <p class="text-sm text-slate-600 mt-2">**Viridian Elementary** (2014 - 2017), **Oakwood Terrace Elementary** (2010 - 2014).</p>
+
+                <!-- Section 5: Elementary Schools -->
+                <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
+                    <div class="w-full p-5 bg-white">
+                        <div class="flex flex-col">
+                            <h3 class="text-lg font-bold text-slate-800">K-5 Education</h3>
+                            <span class="text-xs text-slate-600 font-mono">Sept 2010 - May 2017</span>
+                        </div>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1 mt-3">
+                            <li>**Viridian Elementary** (2014 - 2017) - 4001 Cascade Sky Dr., Arlington, TX 76005</li>
+                            <li>**Oakwood Terrace Elementary** (2010 - 2014) - 700 Ranger Dr, Euless, TX 76040</li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Project Section (No Shortening of Description) -->
     <section id="projects" class="py-24 bg-slate-900 text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:lg:px-8">
             <div class="flex items-center mb-12">
                  <div class="h-1 w-12 bg-cyan-500 mr-4 rounded-full"></div>
                  <h2 class="text-3xl md:text-4xl font-bold">Featured Project: NotaDestructiveProgram</h2>
