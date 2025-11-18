@@ -25,6 +25,7 @@
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Competencies</a>
+                    <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Education</a>
                     <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Project Lab</a>
                     <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Experience</a>
                     <a href="#contact" class="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">Contact</a>
@@ -37,6 +38,7 @@
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 p-4 space-y-3 shadow-xl">
              <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Competencies</a>
+             <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Education</a>
              <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Project Lab</a>
              <a href="#experience" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Experience</a>
              <a href="#contact" class="block text-cyan-600 font-bold" onclick="toggleMobileMenu()">Contact Me</a>
@@ -67,12 +69,12 @@
                 </a>
             </div>
 
-            <!-- Feature Cards -->
+            <!-- Feature Cards (Skills Summary) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-12">
                 <div class="glass-panel p-6 rounded-xl text-center hover:border-cyan-300 transition-colors duration-300">
                     <div class="text-3xl mb-2">🖥️</div>
                     <h3 class="font-bold text-slate-800">Digital Forensics</h3>
-                    <p class="text-sm text-slate-500 mt-1">Data recovery & analysis</p>
+                    <p class="text-sm text-slate-500 mt-1">Evidence recovery & analysis</p>
                 </div>
                 <div class="glass-panel p-6 rounded-xl text-center hover:border-cyan-300 transition-colors duration-300">
                     <div class="text-3xl mb-2">⚙️</div>
@@ -88,13 +90,13 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Custom Canvas Radar Chart) -->
     <section id="skills" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12 text-center">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical Competency Matrix</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">
-                    Visual breakdown of technical skills developed through coursework and hands-on labs.
+                    Visual breakdown of technical skills developed through coursework and hands-on labs (e.g., Pico CTF, Digital Forensics).
                 </p>
             </div>
 
@@ -116,19 +118,15 @@
                     <ul class="space-y-3 mt-4">
                         <li class="flex items-center text-slate-700">
                             <span class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></span>
-                            <strong>Hardware:</strong>&nbsp; Troubleshooting & Assembly
+                            **Technical:** Computational Problem Solving, Storage Management
                         </li>
                         <li class="flex items-center text-slate-700">
                             <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                            <strong>Networking:</strong>&nbsp; Safety Protocols & Maintenance
+                            **Programming:** Intermediate Computer Programming (Java/Python)
                         </li>
                         <li class="flex items-center text-slate-700">
                             <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>
-                            <strong>Forensics:</strong>&nbsp; Evidence Handling & Analysis
-                        </li>
-                        <li class="flex items-center text-slate-700">
-                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                            <strong>Soft Skills:</strong>&nbsp; Bilingual (Esp), Problem Solving
+                            **Compliance:** OSHA/CareerSafe Certificate of Completion (2021)
                         </li>
                     </ul>
 
@@ -136,11 +134,86 @@
                         <div class="flex">
                             <div class="flex-shrink-0 text-yellow-600 mr-3 text-xl">🏆</div>
                             <div>
-                                <p class="text-sm text-yellow-800 font-bold">Certified Achievement</p>
-                                <p class="text-xs text-yellow-700 mt-1">OSHA/CareerSafe Certificate of Completion (2021)</p>
+                                <p class="text-sm text-yellow-800 font-bold">Awards & Achievements</p>
+                                <p class="text-xs text-yellow-700 mt-1">Piano Recital Intermediate Award (2014), TaekWonDo Yellow Belt (2014), Participation Awards (Soccer, Basketball).</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Journey Section (Detailed Coursework) -->
+    <section id="academics" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Academic Journey & Coursework</h2>
+                <p class="text-slate-600">Detailed record of technical and core studies across junior high and high school.</p>
+            </div>
+
+            <div class="space-y-6">
+                
+                <!-- School 1: Trinity High School -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
+                    <h3 class="text-xl font-bold text-slate-800">Trinity High School</h3>
+                    <p class="text-sm text-cyan-600 mb-3">500 N Industrial Blvd. Euless, TX 76039 | Aug 2021 - May 2024</p>
+                    <p class="text-slate-600 mb-4">Focus on Computer Science, Networking, and Digital Forensics.</p>
+
+                    <button onclick="toggleDetails('ths-details')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                        View Details (&#9660;)
+                    </button>
+                    
+                    <div id="ths-details" class="hidden mt-4 pt-4 border-t border-slate-100 space-y-3">
+                        <h4 class="font-bold text-slate-700">12th Grade (2023 - 2024)</h4>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
+                            <li>**Networking** (Mrs.Brockman)</li>
+                            <li>**Computer Maintenance** (Mr.Wallloch)</li>
+                            <li>US History, Algebra I, English IV</li>
+                        </ul>
+                        <h4 class="font-bold text-slate-700">11th Grade (2022 - 2023)</h4>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
+                            <li>**Digital Forensics** (Mr.Walloch)</li>
+                            <li>**Computer Science II** (Mrs.Brockman)</li>
+                            <li>Physics A & B (Mrs.Cardone & Mr.Lawrence)</li>
+                            <li>Algebraic Reasoning A & B (Mrs.Callahan & Mrs.Powe)</li>
+                            <li>English III A & B (Mrs.Smith), Weightlifting (Coach Tyron)</li>
+                        </ul>
+                        <h4 class="font-bold text-slate-700">10th Grade (2021 - 2022)</h4>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
+                            <li>**Computer Science I** (Mrs.Brockman)</li>
+                            <li>**Pico CTF** (Cybersecurity Competition - Mrs.Brockman)</li>
+                            <li>Geometry I & II (Mrs.Otten)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- School 2: Central Junior High -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
+                    <h3 class="text-xl font-bold text-slate-800">Central Junior High (Summer STEM)</h3>
+                    <p class="text-sm text-cyan-600 mb-3">3191 W Pipeline Rd. Euless, TX 76040 | May 2017 - Aug 2021</p>
+
+                    <button onclick="toggleDetails('cjh-details')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                        View Details (&#9660;)
+                    </button>
+                    
+                    <div id="cjh-details" class="hidden mt-4 pt-4 border-t border-slate-100 space-y-3">
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
+                            <li>**Principal of Engineering** (Mrs.Ibanga)</li>
+                            <li>Biology (Mr.Simmons)</li>
+                            <li>Algebra 1 (Mrs.Bagett)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- School 3: Elementary (Static) -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
+                    <h3 class="text-xl font-bold text-slate-800">Elementary Education (K-5)</h3>
+                    <p class="text-sm text-cyan-600 mb-3">Sept 2010 - May 2017</p>
+                    <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
+                        <li>**Viridian Elementary** (2014 - 2017) - Arlington, TX</li>
+                        <li>**Oakwood Terrace Elementary** (2010 - 2014) - Euless, TX</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -249,10 +322,10 @@
                     <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white shadow-sm"></div>
                     
                     <div class="md:col-span-4 glass-panel p-6 rounded-xl ml-4 md:ml-8 hover:border-cyan-300 transition-colors">
-                        <h3 class="text-lg font-bold text-slate-800">Community Volunteer</h3>
-                        <p class="text-cyan-600 text-sm font-medium mb-3">Homeless Shelter & Retirement Home</p>
+                        <h3 class="text-lg font-bold text-slate-800">Community Volunteer (Homeless/Retirement)</h3>
+                        <p class="text-cyan-600 text-sm font-medium mb-3">Believers Bible Chapel | Carrollton, TX</p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Active volunteer for homeless shelters and retirement homes. Organized food drives and provided companionship to residents.
+                            Active volunteer providing food/essentials and companionship/social activities to the homeless and elderly residents.
                         </p>
                     </div>
                 </div>
