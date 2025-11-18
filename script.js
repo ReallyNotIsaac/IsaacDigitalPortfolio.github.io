@@ -5,9 +5,19 @@ function toggleMobileMenu() {
 }
 
 function scrollToSection(id) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// --- New: Detail Toggle Logic for Academics ---
+function toggleDetails(id) {
+    const content = document.getElementById(id);
+    const button = document.querySelector(`button[onclick="toggleDetails('${id}')"]`);
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        button.innerHTML = 'Collapse Details (&#9650;)'; // Up arrow
+    } else {
+        content.classList.add('hidden');
+        button.innerHTML = 'View Details (&#9660;)'; // Down arrow
     }
 }
 
