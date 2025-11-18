@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Samuel | Digital Cybersecurity Portfolio</title>
+    <title>Isaac Samuel | Professional Cybersecurity Portfolio</title>
     
     <!-- Tailwind CSS (Loaded via CDN for ease of use) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,15 +18,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center cursor-pointer" onclick="scrollToSection('hero')">
-                    <span class="text-2xl mr-2">🛡️</span>
+                    <span class="text-2xl mr-2 text-cyan-600">🛡️</span>
                     <span class="font-bold text-xl tracking-tight text-slate-800">ISAAC <span class="text-cyan-600">SAMUEL</span></span>
                 </div>
                 
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Competencies</a>
-                    <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Education</a>
-                    <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Project Lab</a>
+                    <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Skills</a>
+                    <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Academics</a>
+                    <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Projects</a>
                     <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Experience</a>
                     <a href="#contact" class="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">Contact</a>
                 </div>
@@ -37,9 +37,9 @@
         </div>
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 p-4 space-y-3 shadow-xl">
-             <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Competencies</a>
-             <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Education</a>
-             <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Project Lab</a>
+             <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Skills</a>
+             <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Academics</a>
+             <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Projects</a>
              <a href="#experience" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Experience</a>
              <a href="#contact" class="block text-cyan-600 font-bold" onclick="toggleMobileMenu()">Contact Me</a>
         </div>
@@ -49,43 +49,24 @@
     <section id="hero" class="pt-32 pb-20 px-4 min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-slate-50 to-white">
         <div class="max-w-4xl w-full text-center space-y-8">
             <div class="inline-block px-4 py-2 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-700 font-mono text-xs md:text-sm mb-4 font-semibold tracking-wide">
-                AVAILABLE FOR HIRE: CYBERSECURITY & IT SUPPORT
+                CYBERSECURITY & NETWORK SPECIALIST | EULESS, TX
             </div>
             
             <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Securing the <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Digital Frontier</span>
+                Isaac Samuel: <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Digital Portfolio</span>
             </h1>
             
             <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Professional portfolio of <span class="font-semibold text-slate-800">Isaac Samuel</span>. Specializing in digital forensics, hardware integrity, and secure network architecture based in Euless, TX.
+                Aspiring professional merging detailed operational experience with rigorous academic training in Digital Forensics, Networking, and Computer Science. Dedicated to system integrity and ethical problem-solving.
             </p>
 
             <div class="flex flex-wrap justify-center gap-4 mt-8">
                 <a href="#projects" class="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-600/20 transition-all transform hover:-translate-y-1">
-                    View Projects
+                    Explore My Projects
                 </a>
                 <a href="#contact" class="px-8 py-3 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-xl transition-all">
-                    Contact Info
+                    Get Contact Details
                 </a>
-            </div>
-
-            <!-- Feature Cards (Skills Summary) -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-12">
-                <div class="glass-panel p-6 rounded-xl text-center hover:border-cyan-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">🖥️</div>
-                    <h3 class="font-bold text-slate-800">Digital Forensics</h3>
-                    <p class="text-sm text-slate-500 mt-1">Evidence recovery & analysis</p>
-                </div>
-                <div class="glass-panel p-6 rounded-xl text-center hover:border-cyan-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">⚙️</div>
-                    <h3 class="font-bold text-slate-800">Hardware Repair</h3>
-                    <p class="text-sm text-slate-500 mt-1">Assembly & diagnostics</p>
-                </div>
-                <div class="glass-panel p-6 rounded-xl text-center hover:border-cyan-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">🔒</div>
-                    <h3 class="font-bold text-slate-800">Network Security</h3>
-                    <p class="text-sm text-slate-500 mt-1">Protocol implementation</p>
-                </div>
             </div>
         </div>
     </section>
@@ -94,9 +75,9 @@
     <section id="skills" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12 text-center">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical Competency Matrix</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Skills and Disciplines</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">
-                    Visual breakdown of technical skills developed through coursework and hands-on labs (e.g., Pico CTF, Digital Forensics).
+                    A comprehensive view of technical, soft, and creative skills developed through academic and extracurricular pursuits.
                 </p>
             </div>
 
@@ -108,225 +89,210 @@
                     </div>
                 </div>
 
-                <!-- Skills Text -->
+                <!-- Skills & Awards List -->
                 <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-slate-800">Skillset Analysis</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        My strongest areas lie in **Hardware Repair (90%)** and **Network Security (85%)**, utilizing practical knowledge of physical components and safety protocols. I also maintain strong foundations in **Digital Forensics** and **Computational Logic**.
-                    </p>
+                    <h3 class="text-2xl font-bold text-slate-800">Detailed Inventory</h3>
                     
-                    <ul class="space-y-3 mt-4">
-                        <li class="flex items-center text-slate-700">
-                            <span class="w-2 h-2 bg-cyan-500 rounded-full mr-3"></span>
-                            **Technical:** Computational Problem Solving, Storage Management
-                        </li>
-                        <li class="flex items-center text-slate-700">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                            **Programming:** Intermediate Computer Programming (Java/Python)
-                        </li>
-                        <li class="flex items-center text-slate-700">
-                            <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>
-                            **Compliance:** OSHA/CareerSafe Certificate of Completion (2021)
-                        </li>
-                    </ul>
-
-                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0 text-yellow-600 mr-3 text-xl">🏆</div>
-                            <div>
-                                <p class="text-sm text-yellow-800 font-bold">Awards & Achievements</p>
-                                <p class="text-xs text-yellow-700 mt-1">Piano Recital Intermediate Award (2014), TaekWonDo Yellow Belt (2014), Participation Awards (Soccer, Basketball).</p>
-                            </div>
-                        </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl">
+                        <h4 class="font-bold text-slate-700 mb-2 flex items-center"><span class="text-xl mr-2 text-cyan-600">💻</span> Technical Proficiencies</h4>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**Computational Problem Solving** and Logical Design</li>
+                            <li>**Intermediate Computer Programming** (Coursework in Computer Science I & II)</li>
+                            <li>**Computer Hardware Knowledge** (Maintenance, Assembly, Diagnostics)</li>
+                            <li>**Storage Management** Techniques and Systems</li>
+                            <li>**Languages:** English (Native) and Spanish (Beginner)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl">
+                        <h4 class="font-bold text-slate-700 mb-2 flex items-center"><span class="text-xl mr-2 text-yellow-600">🎖️</span> Awards & Certifications</h4>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1">
+                            <li>**OSHA/CareerSafe Certificate of Completion** (Digital OSHA Certificate, 2021)</li>
+                            <li>**Piano Recital Intermediate Award** (2014) - Intermediate Piano Student</li>
+                            <li>**TaekWonDo Yellow Belt Certification** (2014)</li>
+                            <li>**Soccer Participation Award** (2010-2016)</li>
+                            <li>**Basketball Participation Award** (2011-2013)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Academic Journey Section (Detailed Coursework) -->
+    <!-- Academic Journey Section (Detailed Coursework Timeline) -->
     <section id="academics" class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Academic Journey & Coursework</h2>
-                <p class="text-slate-600">Detailed record of technical and core studies across junior high and high school.</p>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Complete Academic History</h2>
+                <p class="text-slate-600">A comprehensive record of K-12 education, focusing on technical studies and core subjects.</p>
             </div>
 
-            <div class="space-y-6">
+            <div class="relative border-l-4 border-slate-300 ml-3 md:ml-0 md:pl-0 space-y-12">
                 
-                <!-- School 1: Trinity High School -->
-                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
-                    <h3 class="text-xl font-bold text-slate-800">Trinity High School</h3>
-                    <p class="text-sm text-cyan-600 mb-3">500 N Industrial Blvd. Euless, TX 76039 | Aug 2021 - May 2024</p>
-                    <p class="text-slate-600 mb-4">Focus on Computer Science, Networking, and Digital Forensics.</p>
-
-                    <button onclick="toggleDetails('ths-details')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                        View Details (&#9660;)
-                    </button>
-                    
-                    <div id="ths-details" class="hidden mt-4 pt-4 border-t border-slate-100 space-y-3">
-                        <h4 class="font-bold text-slate-700">12th Grade (2023 - 2024)</h4>
-                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
-                            <li>**Networking** (Mrs.Brockman)</li>
-                            <li>**Computer Maintenance** (Mr.Wallloch)</li>
-                            <li>US History, Algebra I, English IV</li>
-                        </ul>
-                        <h4 class="font-bold text-slate-700">11th Grade (2022 - 2023)</h4>
-                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
-                            <li>**Digital Forensics** (Mr.Walloch)</li>
-                            <li>**Computer Science II** (Mrs.Brockman)</li>
-                            <li>Physics A & B (Mrs.Cardone & Mr.Lawrence)</li>
-                            <li>Algebraic Reasoning A & B (Mrs.Callahan & Mrs.Powe)</li>
-                            <li>English III A & B (Mrs.Smith), Weightlifting (Coach Tyron)</li>
-                        </ul>
-                        <h4 class="font-bold text-slate-700">10th Grade (2021 - 2022)</h4>
-                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
-                            <li>**Computer Science I** (Mrs.Brockman)</li>
-                            <li>**Pico CTF** (Cybersecurity Competition - Mrs.Brockman)</li>
-                            <li>Geometry I & II (Mrs.Otten)</li>
-                        </ul>
+                <!-- Event 1: Trinity High School (12th Grade) -->
+                <div class="relative pl-10 group">
+                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
+                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
+                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2023 - May 2024</span>
+                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (12th Grade)</h3>
+                        <p class="text-sm text-slate-600 mt-2">**Key Courses:** Networking (Mrs.Brockman), Computer Maintenance (Mr.Wallloch), US History, Algebra I, English IV.</p>
                     </div>
                 </div>
 
-                <!-- School 2: Central Junior High -->
-                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
-                    <h3 class="text-xl font-bold text-slate-800">Central Junior High (Summer STEM)</h3>
-                    <p class="text-sm text-cyan-600 mb-3">3191 W Pipeline Rd. Euless, TX 76040 | May 2017 - Aug 2021</p>
-
-                    <button onclick="toggleDetails('cjh-details')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                        View Details (&#9660;)
-                    </button>
-                    
-                    <div id="cjh-details" class="hidden mt-4 pt-4 border-t border-slate-100 space-y-3">
-                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
-                            <li>**Principal of Engineering** (Mrs.Ibanga)</li>
-                            <li>Biology (Mr.Simmons)</li>
-                            <li>Algebra 1 (Mrs.Bagett)</li>
-                        </ul>
+                <!-- Event 2: Trinity High School (11th Grade) -->
+                <div class="relative pl-10 group">
+                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
+                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
+                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2022 - May 2023</span>
+                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (11th Grade)</h3>
+                        <p class="text-sm text-slate-600 mt-2">**Technical:** Computer Science II (Mrs.Brockman), Digital Forensics (Mr.Walloch). **Core:** Physics A & B (Mrs.Cardone & Mr.Lawrence), Algebraic Reasoning A & B (Mrs.Callahan & Mrs.Powe), English III A & B (Mrs.Smith), Weightlifting (Coach Tyron).</p>
                     </div>
                 </div>
 
-                <!-- School 3: Elementary (Static) -->
-                <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
-                    <h3 class="text-xl font-bold text-slate-800">Elementary Education (K-5)</h3>
-                    <p class="text-sm text-cyan-600 mb-3">Sept 2010 - May 2017</p>
-                    <ul class="list-disc list-inside ml-4 text-sm text-slate-600">
-                        <li>**Viridian Elementary** (2014 - 2017) - Arlington, TX</li>
-                        <li>**Oakwood Terrace Elementary** (2010 - 2014) - Euless, TX</li>
-                    </ul>
+                <!-- Event 3: Trinity High School (10th Grade) -->
+                <div class="relative pl-10 group">
+                    <div class="absolute w-4 h-4 rounded-full bg-cyan-600 -left-2 border-4 border-slate-50"></div>
+                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
+                        <span class="text-xs font-mono text-cyan-600 block mb-1">August 2021 - May 2022</span>
+                        <h3 class="text-xl font-bold text-slate-800">Trinity High School (10th Grade)</h3>
+                        <p class="text-sm text-slate-600 mt-2">**Technical:** Computer Science I (Mrs.Brockman), **Pico CTF** Competition (Mrs.Brockman). **Core:** Geometry I & II (Mrs.Otten).</p>
+                    </div>
+                </div>
+                
+                <!-- Event 4: Central Junior High (Summer STEM) -->
+                <div class="relative pl-10 group">
+                    <div class="absolute w-4 h-4 rounded-full bg-blue-600 -left-2 border-4 border-slate-50"></div>
+                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
+                        <span class="text-xs font-mono text-blue-600 block mb-1">May 2017 - August 2021</span>
+                        <h3 class="text-xl font-bold text-slate-800">Central Junior High (Summer STEM Program)</h3>
+                        <p class="text-sm text-slate-600 mt-2">**Key Courses:** Principal of Engineering (Mrs.Ibanga), Biology (Mr.Simmons), Algebra 1 (Mrs.Bagett).</p>
+                    </div>
+                </div>
+                
+                <!-- Event 5: Elementary Schools -->
+                <div class="relative pl-10 group">
+                    <div class="absolute w-4 h-4 rounded-full bg-slate-400 -left-2 border-4 border-slate-50"></div>
+                    <div class="p-5 bg-white rounded-lg shadow-lg border border-slate-200">
+                        <span class="text-xs font-mono text-slate-600 block mb-1">Sept 2010 - May 2017</span>
+                        <h3 class="text-xl font-bold text-slate-800">K-5 Education</h3>
+                        <p class="text-sm text-slate-600 mt-2">**Viridian Elementary** (2014 - 2017), **Oakwood Terrace Elementary** (2010 - 2014).</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Section -->
-    <section id="projects" class="py-24 bg-slate-50">
+    <!-- Project Section (No Shortening of Description) -->
+    <section id="projects" class="py-24 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-start justify-between gap-12">
+            <div class="flex items-center mb-12">
+                 <div class="h-1 w-12 bg-cyan-500 mr-4 rounded-full"></div>
+                 <h2 class="text-3xl md:text-4xl font-bold">Featured Project: NotaDestructiveProgram</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
                 
-                <!-- Project Info -->
-                <div class="md:w-1/2">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-cyan-600 uppercase bg-cyan-100 rounded-full">
-                        Featured Utility
+                <!-- Description (Full Resume Text) -->
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-cyan-400 uppercase bg-cyan-950/50 border border-cyan-900 rounded-full w-fit">
+                        End of Year Programming Assignment, May 1-10, 2022
                     </div>
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">NotaDestructiveProgram</h2>
-                    <p class="text-lg text-slate-600 mb-6">
-                        A custom software utility developed to analyze system behavior under high-load conditions. It algorithmically spawns resource-intensive browser processes to test RAM management and hardware fail-safes.
+                    <h3 class="text-3xl font-bold text-white mb-4">System Stress Test Utility</h3>
+
+                    <p class="text-slate-300 leading-relaxed italic border-l-4 border-cyan-500 pl-4 py-2 mb-6">
+                        "The Program is designed to allow the user to **stress test their computer** by opening numerous Chrome tabs until the computer shuts down due to RAM overuse, while being a comedic joke due to the comedic buttons. The Program does **not permit damage** to the user’s device, nor was it created with malicious intent."
                     </p>
-                    
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm font-mono text-sm text-slate-600 space-y-2">
-                        <p><span class="text-cyan-600">>></span> Target: System RAM & CPU</p>
-                        <p><span class="text-cyan-600">>></span> Method: Recursive Process Spawning</p>
-                        <p><span class="text-cyan-600">>></span> Safety: Fail-safe shutdown protocols</p>
-                        <p><span class="text-green-600">>></span> Status: Educational / Safe</p>
-                    </div>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        **Professional Framing:** This project served as a practical exploration of **System Resource Management**, demonstrating an understanding of process spawning, RAM allocation limits, and the importance of hardware fail-safe mechanisms within an operating system.
+                    </p>
                 </div>
-                
+
                 <!-- Interactive Lab -->
-                <div class="md:w-1/2 w-full">
-                    <div class="glass-panel rounded-2xl p-6 border border-slate-300 shadow-lg">
-                        <div class="flex justify-between items-center mb-4 border-b border-slate-200 pb-4">
-                            <h3 class="font-bold text-slate-800 flex items-center">
-                                <span id="status-dot" class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-                                Live Stress Simulation
-                            </h3>
-                            <button id="runBtn" onclick="startSimulation()" class="bg-slate-900 hover:bg-slate-700 text-white text-xs px-4 py-2 rounded font-mono transition-colors">
-                                ▶ Run Test
-                            </button>
-                        </div>
-                        
-                        <div class="canvas-container" style="height: 250px;">
-                            <canvas id="simCanvas" width="500" height="250"></canvas>
-                        </div>
-                        
-                        <div class="flex justify-between text-xs font-mono text-slate-400 mt-2">
-                            <span>0s</span>
-                            <span id="simStatusText">SYSTEM IDLE - READY</span>
-                            <span>15s</span>
-                        </div>
+                <div class="bg-slate-950 p-8 border-l border-slate-700 flex flex-col">
+                   <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-6">Live Simulation Lab: RAM Usage Spike</h4>
+                   <div class="flex-grow h-64 lg:h-auto">
+                     <div class="canvas-container" style="height: 250px; max-width: none;">
+                        <canvas id="simCanvas" width="500" height="250"></canvas>
+                     </div>
+                   </div>
+                   <div class="flex justify-between items-center mt-6 border-t border-slate-800 pt-4">
+                        <h3 class="font-bold text-slate-800 flex items-center">
+                            <span id="status-dot" class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                            <span id="simStatusText" class="text-sm text-slate-400 font-mono">SYSTEM IDLE - READY</span>
+                        </h3>
+                        <button id="runBtn" onclick="startSimulation()" class="bg-red-600 hover:bg-red-500 text-white text-xs px-4 py-2 rounded font-mono transition-colors shadow-lg shadow-red-900/30">
+                            ▶ INITIATE STRESS TEST
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section (Full Details) -->
     <section id="experience" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Professional Timeline</h2>
+                <h2 class="text-3xl font-bold text-slate-900">Detailed Professional Timeline</h2>
             </div>
 
             <div class="relative border-l-2 border-slate-200 ml-3 md:ml-0 md:pl-0 space-y-12">
                 
-                <!-- Job 1 -->
+                <!-- Job 1: Walmart (Full Description) -->
                 <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-5 items-start group">
                     <div class="md:col-span-1 text-sm text-slate-500 font-mono md:text-right md:pr-8 pt-1">
                         Oct 2025<br>Present
                     </div>
-                    <!-- Dot -->
-                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-cyan-600 rounded-full border-2 border-white shadow-sm group-hover:scale-125 transition-transform"></div>
+                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-cyan-600 rounded-full border-4 border-white shadow-sm group-hover:scale-125 transition-transform"></div>
                     
                     <div class="md:col-span-4 glass-panel p-6 rounded-xl ml-4 md:ml-8 hover:border-cyan-300 transition-colors">
                         <h3 class="text-lg font-bold text-slate-800">Online Fulfillment Associate</h3>
-                        <p class="text-cyan-600 text-sm font-medium mb-3">Walmart Neighborhood Market | Colleyville, TX</p>
+                        <p class="text-cyan-600 text-sm font-medium mb-3">Walmart Neighborhood Market, 4904 Colleyville Blvd, Colleyville, TX 76034</p>
+                        
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Execute accurate order picking and staging utilizing handheld logistic endpoints to track inventory. Maintain organized workspaces and collaborate with team members to meet daily fulfillment quotas.
+                            As an Online Shopper/Online Fulfillment Associate at Walmart:
                         </p>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1 mt-2">
+                            <li>Accurately pick and prepare customer online orders while meeting speed, quality, and safety standards.</li>
+                            <li>Assist customers in the store by helping them locate items, answering questions, and providing hands-on support, such as loading heavy or oversized products into their vehicles when needed.</li>
+                            <li>Ensure all orders are packed securely and staged correctly for pickup.</li>
+                            <li>Maintain organized work areas, and use Walmart systems and handheld devices to track orders, update inventory, and verify product locations.</li>
+                            <li>Work closely with team members to meet daily fulfillment goals and consistently provide a positive and efficient customer experience.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Job 2 -->
+                <!-- Job 2: VBS Staff -->
                 <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-5 items-start group">
                     <div class="md:col-span-1 text-sm text-slate-500 font-mono md:text-right md:pr-8 pt-1">
                         Jun 2022<br>Present
                     </div>
-                    <!-- Dot -->
-                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-slate-400 rounded-full border-2 border-white shadow-sm group-hover:bg-cyan-500 transition-colors"></div>
+                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-blue-500 rounded-full border-4 border-white shadow-sm group-hover:bg-cyan-500 transition-colors"></div>
                     
                     <div class="md:col-span-4 glass-panel p-6 rounded-xl ml-4 md:ml-8 hover:border-cyan-300 transition-colors">
-                        <h3 class="text-lg font-bold text-slate-800">VBS Staff Member</h3>
-                        <p class="text-cyan-600 text-sm font-medium mb-3">Believers Bible Chapel | Carrollton, TX</p>
+                        <h3 class="text-lg font-bold text-slate-800">Vacation Bible School Staff</h3>
+                        <p class="text-blue-600 text-sm font-medium mb-3">Believers Bible Chapel, 2116 Old Denton Rd. Carrollton, TX 75006</p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Provide leadership for large-scale student events, assisting teachers with curriculum delivery and ensuring a secure environment for all participants.
+                            Worked as VBS Staff and assisted teachers and students with instruction and safety management.
                         </p>
                     </div>
                 </div>
 
-                <!-- Job 3 -->
+                <!-- Job 3 & 4: Volunteering -->
                 <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-5 items-start group">
                     <div class="md:col-span-1 text-sm text-slate-500 font-mono md:text-right md:pr-8 pt-1">
                         2017<br>2019
                     </div>
-                    <!-- Dot -->
-                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white shadow-sm"></div>
+                    <div class="absolute left-[-5px] md:left-[19.5%] top-2 w-3 h-3 bg-slate-400 rounded-full border-4 border-white shadow-sm"></div>
                     
                     <div class="md:col-span-4 glass-panel p-6 rounded-xl ml-4 md:ml-8 hover:border-cyan-300 transition-colors">
-                        <h3 class="text-lg font-bold text-slate-800">Community Volunteer (Homeless/Retirement)</h3>
-                        <p class="text-cyan-600 text-sm font-medium mb-3">Believers Bible Chapel | Carrollton, TX</p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Active volunteer providing food/essentials and companionship/social activities to the homeless and elderly residents.
-                        </p>
+                        <h3 class="text-lg font-bold text-slate-800">Community Volunteer</h3>
+                        <p class="text-slate-600 text-sm font-medium mb-3">Homeless Shelter (June - July 2018) & Retirement Home (July 2017 - 2019)</p>
+                        <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-1 mt-2">
+                             <li>Provided Food and Essentials to the homeless.</li>
+                             <li>At Retirement Home: Sang Songs, shared the Bible, and assisted those in need.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -352,7 +318,7 @@
             </div>
             
             <div class="mt-16 pt-8 border-t border-slate-800 text-slate-500 text-sm">
-                &copy; 2025 Isaac Samuel. Built with Tailwind CSS & HTML5 Canvas.
+                &copy; 2025 Isaac Samuel. All rights reserved.
             </div>
         </div>
     </section>
