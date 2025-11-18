@@ -8,18 +8,37 @@ function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// --- New: Detail Toggle Logic for Academics ---
+// --- NEW: Academic Toggle Function ---
 function toggleDetails(id) {
-    const content = document.getElementById(id);
-    const button = document.querySelector(`button[onclick="toggleDetails('${id}')"]`);
-    if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
-        button.innerHTML = 'Collapse Details (&#9650;)'; // Up arrow
+    const detailsDiv = document.getElementById(id + '-details');
+    const arrowSpan = document.getElementById(id + '-arrow');
+    
+    // Check if the current section is hidden
+    const isHidden = detailsDiv.classList.contains('hidden');
+
+    // Hide all other detailed sections and reset their arrows
+    document.querySelectorAll('[id$="-details"]').forEach(div => {
+        if (div.id !== id + '-details') {
+            div.classList.add('hidden');
+        }
+    });
+    document.querySelectorAll('[id$="-arrow"]').forEach(arrow => {
+        if (arrow.id !== id + '-arrow') {
+            arrow.classList.remove('rotate-180');
+        }
+    });
+
+    // Toggle the current section if it was hidden
+    if (isHidden) {
+        detailsDiv.classList.remove('hidden');
+        arrowSpan.classList.add('rotate-180');
     } else {
-        content.classList.add('hidden');
-        button.innerHTML = 'View Details (&#9660;)'; // Down arrow
+        // Hide the current section if it was visible
+        detailsDiv.classList.add('hidden');
+        arrowSpan.classList.remove('rotate-180');
     }
 }
+
 
 // --- 1. Custom Radar Chart (Skills) ---
 function drawRadarChart() {
