@@ -23,14 +23,14 @@
                 </div>
                 
                 <!-- Desktop Nav -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#brand" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Brand</a>
-                    <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Skills</a>
-                    <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Academics</a>
-                    <a href="#insights" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Insights</a>
-                    <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Projects</a>
-                    <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Experience</a>
-                    <a href="#contact" class="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">Contact</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#brand" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Brand</a>
+                    <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Skills</a>
+                    <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Academics</a>
+                    <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Projects</a>
+                    <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Experience</a>
+                    <a href="#resume" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Resume</a>
+                    <a href="#contact" class="px-3 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors text-sm">Contact</a>
                 </div>
 
                 <!-- Mobile Menu Toggle -->
@@ -42,9 +42,9 @@
              <a href="#brand" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Brand</a>
              <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Skills</a>
              <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Academics</a>
-             <a href="#insights" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Insights</a>
              <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Projects</a>
              <a href="#experience" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Experience</a>
+             <a href="#resume" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Resume</a>
              <a href="#contact" class="block text-cyan-600 font-bold" onclick="toggleMobileMenu()">Contact Me</a>
         </div>
     </nav>
@@ -75,8 +75,8 @@
                 <a href="#projects" class="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-600/20 transition-all transform hover:-translate-y-1">
                     Explore My Projects
                 </a>
-                <a href="#coverletter" class="px-8 py-3 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-xl transition-all">
-                    View Cover Letter
+                <a href="#resume" class="px-8 py-3 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-xl transition-all">
+                    View Resume
                 </a>
             </div>
         </div>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <!-- Cover Letter Section (Updated with Draft Content) -->
+    <!-- Cover Letter Section -->
     <section id="coverletter" class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -203,7 +203,7 @@
         </div>
     </section>
 
-    <!-- Research Brief Section (New) -->
+    <!-- Research Brief Section -->
     <section id="insights" class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -485,6 +485,31 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section (New) -->
+    <section id="resume" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Resume</h2>
+                <p class="text-slate-600">Download my full resume for offline review.</p>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="glass-panel p-8 rounded-2xl border border-slate-200 shadow-lg text-center max-w-md w-full">
+                    <div class="mb-6 text-6xl">📄</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Isaac Samuel's Resume</h3>
+                    <p class="text-slate-500 mb-6 text-sm">PDF Format • Updated 2025</p>
+                    
+                    <a href="Isaac Samuel's Resume 2022-Present.pdf" download class="inline-flex items-center justify-center w-full px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-xl transition-colors shadow-md hover:shadow-lg">
+                        <span class="mr-2 text-xl">⬇️</span> Download Full Resume
+                    </a>
+                    <p class="mt-4 text-xs text-slate-400">
+                        Please ensure the PDF file is in the same folder as this website.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
