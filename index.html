@@ -351,13 +351,14 @@
 
             <div class="flex flex-col lg:flex-row gap-8 items-start justify-center">
                 
-                <!-- Left Column: Resume Viewer (Iframe) -->
-                <div class="w-full lg:w-2/3 bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden h-[600px]">
+                <!-- Left Column: Resume Viewer (Iframe with bigger height) -->
+                <div class="w-full lg:w-2/3 bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden h-[800px]">
                      <!-- IMPORTANT: The PDF file must be in the same folder as index.html -->
                      <iframe 
                         src="Isaac Samuel's Resume 2022-Present.pdf" 
                         class="w-full h-full" 
                         title="Resume Preview"
+                        type="application/pdf"
                     >
                         <p class="flex items-center justify-center h-full text-slate-500">
                             PDF Preview Unavailable on this device. Please use the download button.
@@ -366,7 +367,7 @@
                 </div>
 
                 <!-- Right Column: Download & Actions -->
-                <div class="w-full lg:w-1/3 flex flex-col gap-6">
+                <div class="w-full lg:w-1/3 flex flex-col gap-6 sticky top-24">
                     <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
                         <h3 class="text-xl font-bold text-slate-800 mb-2">Download Resume</h3>
                         <p class="text-slate-600 text-sm mb-6">Get a copy of my full resume in PDF format for offline viewing or sharing.</p>
