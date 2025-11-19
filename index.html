@@ -24,9 +24,10 @@
                 
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#coverletter" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Letter</a>
+                    <a href="#brand" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Brand</a>
                     <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Skills</a>
                     <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Academics</a>
+                    <a href="#insights" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Insights</a>
                     <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Projects</a>
                     <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors">Experience</a>
                     <a href="#contact" class="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">Contact</a>
@@ -38,9 +39,10 @@
         </div>
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 p-4 space-y-3 shadow-xl">
-             <a href="#coverletter" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Cover Letter</a>
+             <a href="#brand" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Brand</a>
              <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Skills</a>
              <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Academics</a>
+             <a href="#insights" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Insights</a>
              <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Projects</a>
              <a href="#experience" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Experience</a>
              <a href="#contact" class="block text-cyan-600 font-bold" onclick="toggleMobileMenu()">Contact Me</a>
@@ -66,7 +68,7 @@
             </h1>
             
             <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Aspiring professional merging detailed operational experience with rigorous academic training in Digital Forensics, Networking, and Computer Science. Dedicated to system integrity and ethical problem-solving.
+                "Securing digital environments through proactive problem-solving and dedicated user support."
             </p>
 
             <div class="flex flex-wrap justify-center gap-4 mt-8">
@@ -80,26 +82,63 @@
         </div>
     </section>
 
-    <!-- Cover Letter Section -->
+    <!-- Personal Brand Analysis Section -->
+    <section id="brand" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Professional Brand Identity</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    My professional identity is defined by a dual focus on technical problem-solving and hands-on support, bridging the gap between complex security requirements and practical user needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-cyan-300 transition-colors">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-4 text-2xl">🤝</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Service-Oriented Leadership</h3>
+                    <p class="text-slate-600 text-sm">Prioritizing the needs of others to ensure collective success. I view security not just as a technical hurdle, but as a service that protects people's livelihoods.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-cyan-300 transition-colors">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-4 text-2xl">🧩</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Analytical Problem Solving</h3>
+                    <p class="text-slate-600 text-sm">The relentless pursuit of root-cause solutions through logic and testing. I actively test systems to understand their limits and diagnose technical issues efficiently.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-cyan-300 transition-colors">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-4 text-2xl">⚖️</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Ethical Responsibility</h3>
+                    <p class="text-slate-600 text-sm">Adhering to strict moral codes regarding data privacy. I ensure my projects are educational without malicious intent and respect safety standards (OSHA certified).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cover Letter Section (Updated with Draft Content) -->
     <section id="coverletter" class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Professional Cover Letter</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Cover Letter</h2>
                 <p class="text-slate-600">A personal introduction summarizing my commitment to technical excellence and professional growth.</p>
             </div>
 
             <div class="glass-panel p-8 rounded-2xl border border-slate-200 shadow-lg text-slate-700 leading-relaxed">
+                <p class="mb-4">Dear Hiring Manager,</p>
                 <p class="mb-4">
-                    Dear Reviewer,
+                    I am applying for the open position with your company. As a Cybersecurity student who focuses on computational thinking and problem-solving, coupled with years of superior customer support, my technical skills and service skills would be a successful addition to your IT department.
                 </p>
                 <p class="mb-4">
-                    It is with great enthusiasm that I present my professional portfolio, which showcases my technical aptitude, academic foundation, and dedication to cybersecurity and IT support principles. My focus areas at Trinity High School—including <strong>Digital Forensics, Networking, and Computer Science</strong>—have provided me with a robust understanding of system architecture and data integrity.
+                    As a Cybersecurity student, I possess a thorough working knowledge of computer components, storage devices, and programming software applications. I always wanted to know how things worked and sometimes, what caused them to not work properly. For example, I created the <strong>NotaDestructiveProgram</strong>, which serves as a stress test program to see how much RAM can be utilized before a system crashes. This impressive feat showcases my understanding of how things work, the ethics of stress testing, and research of hardware components used to better understand actual capabilities.
                 </p>
                 <p class="mb-4">
-                    My practical skills extend beyond the classroom. My role as an Online Fulfillment Associate at Walmart demands extreme accuracy, speed, and adherence to protocol, directly translating to the attention to detail required in security monitoring and operations. Furthermore, my hands-on experience in <strong>AV/Technical Support</strong> demonstrates my ability to troubleshoot and maintain complex digital systems in a live environment.
+                    Where the degree, per se, would provide me with the technical skills required to fulfill this position, my current position at Walmart as an Online Fulfillment Associate has provided me with the requisite soft skills necessary to thrive in the industry. Here, speed and accuracy, as well as attention to detail, are key components for inventory management systems and fulfilling online orders, which is essentially the IT equivalent of work tickets and asset management systems. Furthermore, consistent face-to-face customer support among a fast-paced retail operation, compounded by my own volunteering endeavors at Believers Bible Chapel, has transformed the way I appeal to customers to listen and maintain a level head. After all, customers are usually more frustrated by their problem than the actual problem itself - and I'm here to help.
                 </p>
                 <p class="mb-4">
-                    I am confident in my ability to apply my computational problem-solving skills and highly disciplined work ethic to a challenging professional environment. I am eager to leverage this blend of academic rigor and practical experience to contribute positively to your team.
+                    Applying my software applications for digital forensics and hardware components utilized for maintenance will enable me to not only keep pace with your company's speed of security implementation and operational objectives but also empower your team. I'm a fast learner with OSHA certification and ready to hit the ground running.
+                </p>
+                <p class="mb-4">
+                    Thank you for your consideration. I look forward to discussing how my diverse background in technical applications and customer support makes me the ideal candidate for the position.
                 </p>
                 <p>
                     Sincerely,<br>
@@ -113,24 +152,21 @@
     <section id="skills" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12 text-center">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Skills and Disciplines</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical & Soft Skills Inventory</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">
-                    A comprehensive view of technical, soft, and creative skills developed through academic and extracurricular pursuits.
+                    Leveraging a unique combination of technical expertise and communication strengths.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 
-                <!-- Skills & Awards List (Clean Lists, No Asterisks) -->
+                <!-- Skills List -->
                 <div class="space-y-6 order-2 md:order-1">
-                    <h3 class="text-2xl font-bold text-slate-800">Inventory</h3>
-                    
                     <div class="p-4 bg-white border border-slate-200 rounded-xl">
-                        <h4 class="font-bold text-slate-700 mb-3 flex items-center"><span class="text-xl mr-2">💪</span> Key Strengths</h4>
+                        <h4 class="font-bold text-slate-700 mb-3 flex items-center"><span class="text-xl mr-2">🗣️</span> Communication Strengths</h4>
                         <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-2">
-                            <li><span class="font-semibold text-cyan-700">Attention to Protocol:</span> Proven ability to follow complex safety and operational guidelines (OSHA Certified).</li>
-                            <li><span class="font-semibold text-cyan-700">System Integrity Focus:</span> Dedicated to maintaining hardware and network health.</li>
-                            <li><span class="font-semibold text-cyan-700">Reliability & Punctuality:</span> Demonstrated dependability in fast-paced retail and volunteer settings.</li>
+                            <li><span class="font-semibold text-cyan-700">Customer Interface & Empathy:</span> Ability to listen to user problems, understand frustration, and provide support without overwhelming them.</li>
+                            <li><span class="font-semibold text-cyan-700">Technical Clarity:</span> Honed ability to explain concepts simply and break down complex instructions into manageable steps.</li>
                             <li><span class="font-semibold text-cyan-700">Cross-Cultural Communication:</span> Proficient in English (Native) and Spanish (Beginner).</li>
                         </ul>
                     </div>
@@ -142,15 +178,14 @@
                             <li>Intermediate Computer Programming (Coursework in Computer Science I & II)</li>
                             <li>Computer Hardware Knowledge (Maintenance, Assembly, Diagnostics)</li>
                             <li>Storage Management Techniques and Systems</li>
-                            <li>Languages: English (Native) and Spanish (Beginner)</li>
                         </ul>
                     </div>
-                    
+
                     <div class="p-4 bg-white border border-slate-200 rounded-xl">
                         <h4 class="font-bold text-slate-700 mb-3 flex items-center"><span class="text-xl mr-2">🏆</span> Awards & Certifications</h4>
                         <ul class="list-disc list-inside ml-4 text-sm text-slate-600 space-y-2">
                             <li>OSHA/CareerSafe Certificate of Completion (Digital OSHA Certificate, 2021)</li>
-                            <li>Piano Recital Intermediate Award (2014) - Intermediate Piano Student</li>
+                            <li>Piano Recital Intermediate Award (2014)</li>
                             <li>TaekWonDo Yellow Belt Certification (2014)</li>
                             <li>Soccer Participation Award (2010-2016)</li>
                             <li>Basketball Participation Award (2011-2013)</li>
@@ -168,8 +203,39 @@
         </div>
     </section>
 
+    <!-- Research Brief Section (New) -->
+    <section id="insights" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-purple-600 uppercase bg-purple-100 rounded-full">
+                    Featured Writing
+                </div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Research Brief: GenAI & Professional Branding</h2>
+                <p class="text-slate-600">An analysis of how Generative AI is reshaping professional communication and the ethics of authenticity in 2025.</p>
+            </div>
+
+            <div class="glass-panel p-8 rounded-2xl border border-slate-200 shadow-md">
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Executive Summary</h3>
+                <p class="text-slate-700 mb-4 leading-relaxed">
+                    By 2025, Generative Artificial Intelligence (GenAI) has evolved from simple drafts to capable business agents. This shift creates a sociocultural challenge in discerning human-made versus algorithmically created content. This brief argues that while GenAI offers irrefutable efficiency, it threatens to dilute "thought leadership" through the homogenization of voice.
+                </p>
+                
+                <h4 class="font-bold text-slate-800 mt-6 mb-2">Key Insights:</h4>
+                <ul class="list-disc list-inside text-slate-700 space-y-2 mb-6">
+                    <li><strong>Authenticity as a Competitive Advantage:</strong> In a trust-driven industry like cybersecurity, an accurate representation of credentials is paramount. Authenticity is not just a soft skill but a strategic differentiator against the "synthetic deluge" of AI content.</li>
+                    <li><strong>Ethical Dissonance:</strong> The greatest ethical concern is transparency. Is it ethical for a professional to take credit for AI-produced work? The industry must navigate this gray area by balancing efficiency with accountability.</li>
+                    <li><strong>Data Privacy & Shadow AI:</strong> Using public-facing models for debugging proprietary code poses significant privacy risks. Professionals must maintain strict "hygiene" regarding where their data goes.</li>
+                </ul>
+
+                <div class="bg-slate-100 p-4 rounded-lg border-l-4 border-purple-500 text-sm text-slate-600 italic">
+                    "The most consistently established brand over time will come not from the most generated branding materials but instead, from the most benevolent AI that supports but never supplants a professional's authentic voice."
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Academic Journey Section (Interactive Toggles) -->
-    <section id="academics" class="py-24 bg-slate-50 border-t border-slate-100">
+    <section id="academics" class="py-24 bg-white border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Complete Academic History</h2>
@@ -177,7 +243,6 @@
             </div>
 
             <div class="space-y-4">
-                
                 <!-- Toggle 1: Trinity High School (12th Grade) -->
                 <div class="glass-panel rounded-xl border border-slate-200 shadow-md overflow-hidden">
                     <button class="w-full p-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors" onclick="toggleDetails('trinity12')">
@@ -272,7 +337,6 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -357,7 +421,7 @@
                     </div>
                 </div>
                 
-                <!-- Job 2: AV Team (Included) -->
+                <!-- Job 2: AV Team -->
                 <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-5 items-start group">
                     <div class="md:col-span-1 text-sm text-slate-500 font-mono md:text-right md:pr-8 pt-1">
                         2021<br>Present
