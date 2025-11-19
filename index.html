@@ -27,9 +27,9 @@
                     <a href="#brand" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Brand</a>
                     <a href="#skills" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Skills</a>
                     <a href="#academics" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Academics</a>
+                    <a href="#resume" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Resume</a>
                     <a href="#projects" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Projects</a>
                     <a href="#experience" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Experience</a>
-                    <a href="#resume" class="text-slate-600 hover:text-cyan-600 font-medium transition-colors text-sm">Resume</a>
                     <a href="#contact" class="px-3 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors text-sm">Contact</a>
                 </div>
 
@@ -42,9 +42,9 @@
              <a href="#brand" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Brand</a>
              <a href="#skills" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Skills</a>
              <a href="#academics" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Academics</a>
+             <a href="#resume" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Resume</a>
              <a href="#projects" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Projects</a>
              <a href="#experience" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Experience</a>
-             <a href="#resume" class="block text-slate-600 font-medium" onclick="toggleMobileMenu()">Resume</a>
              <a href="#contact" class="block text-cyan-600 font-bold" onclick="toggleMobileMenu()">Contact Me</a>
         </div>
     </nav>
@@ -75,8 +75,8 @@
                 <a href="#projects" class="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-600/20 transition-all transform hover:-translate-y-1">
                     Explore My Projects
                 </a>
-                <a href="#resume" class="px-8 py-3 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-xl transition-all">
-                    View Resume
+                <a href="#coverletter" class="px-8 py-3 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-xl transition-all">
+                    View Cover Letter
                 </a>
             </div>
         </div>
@@ -341,6 +341,65 @@
         </div>
     </section>
 
+    <!-- Resume Section (Redesigned for Visibility + Side Download) -->
+    <section id="resume" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Resume & Qualifications</h2>
+                <p class="text-slate-600">Review my credentials directly or download for your records.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-start justify-center">
+                
+                <!-- Left Column: Resume Viewer (Iframe) -->
+                <div class="w-full lg:w-2/3 bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden h-[600px]">
+                     <!-- IMPORTANT: The PDF file must be in the same folder as index.html -->
+                     <iframe 
+                        src="Isaac Samuel's Resume 2022-Present.pdf" 
+                        class="w-full h-full" 
+                        title="Resume Preview"
+                    >
+                        <p class="flex items-center justify-center h-full text-slate-500">
+                            PDF Preview Unavailable on this device. Please use the download button.
+                        </p>
+                    </iframe>
+                </div>
+
+                <!-- Right Column: Download & Actions -->
+                <div class="w-full lg:w-1/3 flex flex-col gap-6">
+                    <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Download Resume</h3>
+                        <p class="text-slate-600 text-sm mb-6">Get a copy of my full resume in PDF format for offline viewing or sharing.</p>
+                        
+                        <a href="Isaac Samuel's Resume 2022-Present.pdf" download class="flex items-center justify-center w-full px-6 py-4 bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-cyan-600/30 group">
+                            <span class="mr-3 text-2xl group-hover:translate-y-1 transition-transform">⬇️</span> 
+                            <span>Download PDF</span>
+                        </a>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border border-slate-200 shadow-md">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Quick Highlights</h3>
+                         <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span> OSHA Certified (2021)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span> Bilingual (English/Spanish)
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span> AV & Tech Support Experience
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span> Strong Customer Service Background
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Project Section -->
     <section id="projects" class="py-24 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:lg:px-8">
@@ -485,31 +544,6 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section (New) -->
-    <section id="resume" class="py-24 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Resume</h2>
-                <p class="text-slate-600">Download my full resume for offline review.</p>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="glass-panel p-8 rounded-2xl border border-slate-200 shadow-lg text-center max-w-md w-full">
-                    <div class="mb-6 text-6xl">📄</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Isaac Samuel's Resume</h3>
-                    <p class="text-slate-500 mb-6 text-sm">PDF Format • Updated 2025</p>
-                    
-                    <a href="Isaac Samuel's Resume 2022-Present.pdf" download class="inline-flex items-center justify-center w-full px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-xl transition-colors shadow-md hover:shadow-lg">
-                        <span class="mr-2 text-xl">⬇️</span> Download Full Resume
-                    </a>
-                    <p class="mt-4 text-xs text-slate-400">
-                        Please ensure the PDF file is in the same folder as this website.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
