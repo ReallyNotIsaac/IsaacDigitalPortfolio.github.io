@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Samuel | Business Portfolio Presentation</title>
+    
+    <!-- Reveal.js CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css" id="theme">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0891b2; /* Cyan 600 */
+            --dark: #0f172a; /* Slate 900 */
+            --light: #f8fafc; /* Slate 50 */
+            --text: #334155; /* Slate 700 */
+            --accent: #7c3aed; /* Violet 600 */
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--light); }
+        
+        .reveal { color: var(--text); }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            text-transform: none;
+        }
+        
+        .reveal h1 { font-weight: 800; letter-spacing: -0.03em; font-size: 2.5em; }
+        .reveal h2 { color: var(--primary); font-weight: 700; font-size: 1.8em; }
+        .reveal h3 { font-size: 1.2em; text-transform: uppercase; letter-spacing: 2px; color: #64748b; margin-bottom: 40px; }
+        
+        .reveal p, .reveal li { font-size: 24px; line-height: 1.5; }
+        
+        /* Layout Helpers */
+        .container { display: flex; gap: 40px; align-items: center; height: 100%; }
+        .col-6 { flex: 1; }
+        .text-left { text-align: left; }
+        .highlight { color: var(--primary); font-weight: 700; }
+        
+        /* Components */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--primary);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.6em;
+            font-weight: 600;
+            margin: 0 5px 5px 0;
+            vertical-align: middle;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Timeline Style */
+        .timeline { border-left: 3px solid #cbd5e1; margin-left: 10px; padding-left: 25px; }
+        .timeline-item { position: relative; margin-bottom: 30px; }
+        .timeline-item::before {
+            content: ''; position: absolute; left: -34px; top: 5px;
+            width: 15px; height: 15px; background: var(--primary); border-radius: 50%; border: 3px solid white;
+        }
+        .timeline-date { font-size: 0.7em; color: var(--primary); font-weight: 700; text-transform: uppercase; }
+
+        /* Footer */
+        .footer { position: absolute; bottom: 20px; left: 20px; font-size: 12px; color: #94a3b8; z-index: 10; }
+    </style>
+</head>
+<body>
+
+    <div class="footer">Isaac Samuel | Cybersecurity Business Portfolio | 2025</div>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: Introduction -->
+            <section>
+                <div class="container">
+                    <div class="col-6 text-left">
+                        <div class="tag">CYBERSECURITY • STRATEGY</div>
+                        <h1>Isaac<br><span class="highlight">Samuel</span></h1>
+                        <p style="font-size: 1.1em; margin-top: 20px; color: var(--text);">
+                            "Securing digital environments through proactive problem-solving and dedicated user support."
+                        </p>
+                        <p style="font-size: 0.8em; margin-top: 30px;">
+                            <i class="fa-solid fa-location-dot highlight"></i> Euless, TX 76040<br>
+                            <i class="fa-solid fa-envelope highlight"></i> isaac21samuel@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <img src="595014a5-af0a-4f88-80ca-e3d1536555d1.jpg" class="profile-img" alt="Isaac Samuel">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: Professional Brand -->
+            <section>
+                <h3 class="text-left">Professional Identity</h3>
+                <div class="container">
+                    <div class="col-6 text-left">
+                        <h2 style="font-size: 1.6em;">The Service-Oriented<br>Technologist</h2>
+                        <p>I bridge the gap between <strong>complex technical security</strong> and <strong>practical user needs</strong>.</p>
+                        <p>Unlike professionals who focus solely on code, I bring operational discipline from high-pressure logistics and technical AV support.</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <h4><i class="fa-solid fa-fingerprint highlight"></i> Unique Value Proposition</h4>
+                            <p style="font-size: 0.7em;">Combining technical diagnostics (hardware/software) with empathetic end-user support. I treat security as a service that enables business continuity, not just a technical hurdle.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: Core Values -->
+            <section>
+                <h3>Core Professional Values</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                    <div class="card">
+                        <i class="fa-solid fa-handshake highlight" style="font-size: 1.5em; margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 0.9em;">Service Leadership</h4>
+                        <p style="font-size: 0.6em;">Prioritizing the needs of others. Demonstrated through volunteer work at homeless shelters and retirement homes.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-magnifying-glass highlight" style="font-size: 1.5em; margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 0.9em;">Analytical Solving</h4>
+                        <p style="font-size: 0.6em;">Relentless pursuit of root causes through logic. Active stress-testing of systems to understand hardware limits.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-shield-halved highlight" style="font-size: 1.5em; margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 0.9em;">Ethical Responsibility</h4>
+                        <p style="font-size: 0.6em;">Adhering to strict moral codes. Projects are designed for educational testing, never malicious intent.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Skills Inventory -->
+            <section>
+                <h3 class="text-left">Technical Competencies</h3>
+                <div class="container">
+                    <div class="col-6 text-left">
+                        <div class="card">
+                            <h4><i class="fa-solid fa-terminal highlight"></i> Technical Skills</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                                <span class="tag">Digital Forensics</span>
+                                <span class="tag">Network Security</span>
+                                <span class="tag">Hardware Diagnostics</span>
+                                <span class="tag">Storage Management</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4><i class="fa-solid fa-certificate highlight"></i> Certifications</h4>
+                            <ul style="font-size: 0.7em; margin-left: 20px;">
+                                <li>OSHA/CareerSafe Certification (2021)</li>
+                                <li>Pico CTF Competitor</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 text-left">
+                        <div class="card" style="border-left-color: var(--accent);">
+                            <h4><i class="fa-solid fa-comments highlight" style="color: var(--accent);"></i> Communication</h4>
+                            <ul style="font-size: 0.7em; margin-left: 20px;">
+                                <li><strong>Cross-Cultural:</strong> Bilingual (English/Spanish)</li>
+                                <li><strong>Technical Clarity:</strong> Breaking down complex instructions for non-tech users.</li>
+                                <li><strong>Empathy:</strong> De-escalating frustrated users in high-stress environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Experience Timeline -->
+            <section>
+                <h3 class="text-left">Professional Timeline</h3>
+                <div class="container align-start">
+                    <div class="col-6 text-left timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Oct 2025 - Present</div>
+                            <strong>Online Fulfillment Associate</strong><br>
+                            <span style="font-size: 0.7em; color: #64748b;">Walmart Neighborhood Market</span>
+                            <p style="font-size: 0.6em; margin-top: 5px;">Orchestrating logistics, maintaining inventory accuracy under pressure, and utilizing handheld tracking systems.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - Present</div>
+                            <strong>AV & Technical Support</strong><br>
+                            <span style="font-size: 0.7em; color: #64748b;">Believers Bible Chapel</span>
+                            <p style="font-size: 0.6em; margin-top: 5px;">Troubleshooting audio/visual equipment and network connections for live events. Ensuring system reliability.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-left timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">June 2022 - Present</div>
+                            <strong>VBS Staff Member</strong><br>
+                            <span style="font-size: 0.7em; color: #64748b;">Believers Bible Chapel</span>
+                            <p style="font-size: 0.6em; margin-top: 5px;">Leadership and safety management for large-scale student events.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2017 - 2019</div>
+                            <strong>Community Volunteer</strong><br>
+                            <span style="font-size: 0.7em; color: #64748b;">Homeless Shelter & Retirement Home</span>
+                            <p style="font-size: 0.6em; margin-top: 5px;">Providing essential services and companionship, developing emotional intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Project Spotlight -->
+            <section>
+                <div class="container">
+                    <div class="col-6 text-left">
+                        <div class="tag">CASE STUDY</div>
+                        <h2>NotaDestructive<br>Program</h2>
+                        <p style="color: #64748b; font-size: 0.8em;">System Stress & Resilience Testing Utility</p>
+                        
+                        <div style="margin-top: 20px; font-size: 0.7em;">
+                            <p><strong><i class="fa-solid fa-crosshairs highlight"></i> The Challenge:</strong><br>Understand hardware limits regarding RAM usage and process spawning stability.</p>
+                            <p><strong><i class="fa-solid fa-code highlight"></i> The Solution:</strong><br>Designed an algorithm that spawns browser instances to saturate RAM, triggering OS fail-safes.</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="background: #1e293b; color: #22d3ee; padding: 20px; border-radius: 10px; font-family: 'JetBrains Mono', monospace; font-size: 0.6em; text-align: left;">
+                            > INIT_STRESS_TEST...<br>
+                            > ALLOCATING RESOURCES...<br>
+                            > SPAWNING THREADS [||||||||||] 100%<br>
+                            > MEMORY USAGE: 92%<br>
+                            > WARNING: CRITICAL LOAD DETECTED<br>
+                            > FAILSAFE TRIGGERED.<br>
+                            > ETHICAL SAFETY STOP ENGAGED.<br>
+                            > SYSTEM SHUTDOWN INITIATED...
+                        </div>
+                        <p style="font-size: 0.6em; margin-top: 15px; color: #64748b;">*Designed strictly for educational testing with built-in safety parameters.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Thought Leadership -->
+            <section>
+                <h3 class="text-left">Thought Leadership: GenAI & Ethics</h3>
+                <div class="card" style="border-left: 5px solid var(--accent);">
+                    <h4 style="color: var(--accent);">Research Brief: GenAI & Professional Branding (2025)</h4>
+                    <p style="font-size: 0.7em;"><strong>Thesis:</strong> As Generative AI homogenizes content, <span class="highlight" style="color: var(--accent);">Authenticity</span> becomes the new competitive advantage in cybersecurity.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                        <div style="background: #f5f3ff; padding: 10px; border-radius: 5px;">
+                            <strong>Voice Dilution</strong>
+                            <p style="font-size: 0.6em; margin: 5px 0 0 0;">AI flattens brand distinctiveness. Unique human insight is the only differentiator.</p>
+                        </div>
+                        <div style="background: #f5f3ff; padding: 10px; border-radius: 5px;">
+                            <strong>Shadow AI</strong>
+                            <p style="font-size: 0.6em; margin: 5px 0 0 0;">Using public models for debugging code risks IP leakage and privacy breaches.</p>
+                        </div>
+                        <div style="background: #f5f3ff; padding: 10px; border-radius: 5px;">
+                            <strong>The Ethical Pause</strong>
+                            <p style="font-size: 0.6em; margin: 5px 0 0 0;">Professionals must verify AI output to prevent reputational damage ("The Unretrievable Blunder").</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Career Roadmap -->
+            <section>
+                <h3 class="text-left">Strategic Career Roadmap</h3>
+                <div style="display: flex; gap: 20px; margin-top: 30px;">
+                    <div class="card" style="flex: 1;">
+                        <div class="tag">PHASE 1: 1-2 YRS</div>
+                        <h4>Foundation</h4>
+                        <ul style="font-size: 0.6em; margin-left: 15px;">
+                            <li>Secure IT Help Desk / Junior Analyst role</li>
+                            <li>Obtain CompTIA Security+ & Network+</li>
+                            <li>Focus: Documentation & Ticket Management</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="flex: 1;">
+                        <div class="tag">PHASE 2: 3-5 YRS</div>
+                        <h4>Specialization</h4>
+                        <ul style="font-size: 0.6em; margin-left: 15px;">
+                            <li>Role: SOC Analyst or Incident Responder</li>
+                            <li>Focus: Digital Forensics Niche</li>
+                            <li>Mastering "After Action Reports"</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="flex: 1;">
+                        <div class="tag">PHASE 3: 5+ YRS</div>
+                        <h4>Leadership</h4>
+                        <ul style="font-size: 0.6em; margin-left: 15px;">
+                            <li>Role: Security Operations Manager</li>
+                            <li>Lead a Cybersecurity Team</li>
+                            <li>Mentorship & Public Speaking</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: Closing -->
+            <section>
+                <div style="text-align: center; margin-top: 50px;">
+                    <h1>Let's Connect</h1>
+                    <p style="font-size: 1.2em; max-width: 700px; margin: 20px auto; color: var(--text);">
+                        I am ready to apply my diverse background in technical applications and customer support to your IT department.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; gap: 60px; margin-top: 50px;">
+                        <div>
+                            <i class="fa-solid fa-envelope highlight" style="font-size: 2.5em; margin-bottom: 15px;"></i>
+                            <p style="font-size: 0.8em;">isaac21samuel@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone highlight" style="font-size: 2.5em; margin-bottom: 15px;"></i>
+                            <p style="font-size: 0.8em;">(214) 970-6487</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            slideNumber: 'c/t'
+        });
+    </script>
+</body>
+</html>
